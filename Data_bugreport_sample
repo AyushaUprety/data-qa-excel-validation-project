@@ -1,0 +1,95 @@
+
+Bug Report 1
+
+Title
+Missing values found in Age column
+
+Dataset
+Data.csv
+
+Description
+While performing manual data QA in Excel, several records were found with missing values in the Age column. Age appears to be an important numeric field and is expected to be present for all records.
+
+Steps to Reproduce
+
+1. Open the dataset in Excel
+2. Select the Age column
+3. Apply a blank check using a helper formula
+
+Actual Result
+Multiple rows contain blank age values.
+
+Expected Result
+All records should have a valid numeric age value.
+
+Impact
+Missing age data can affect filtering, reporting, and downstream analysis.
+
+Evidence
+Blank values detected using helper column and Excel formulas.
+
+
+
+Bug Report 2
+
+Title
+Email domain inconsistencies detected (gmail vs gamil)
+
+Dataset
+Data.csv
+
+Description
+During data validation, inconsistencies were found in the Email column where some email domains contain typos such as “gamil.com” instead of “gmail.com”.
+
+Steps to Reproduce
+
+1. Open the dataset in Excel
+2. Review the Email column
+3. Check email domains using a helper column
+
+Actual Result
+Some email addresses contain incorrect or inconsistent domains.
+
+Expected Result
+Email domains should follow a standardized and valid format.
+
+Impact
+Invalid email domains can cause communication failures and reduce data reliability.
+
+Evidence
+Multiple rows identified with incorrect email domain values.
+
+
+
+Bug Report 3
+
+Title
+Inconsistent formatting in Department column due to extra spaces
+
+Dataset
+Data.csv
+
+Description
+While reviewing the Department column, extra leading and trailing spaces were found in some records, causing inconsistent values for the same department.
+
+Steps to Reproduce
+
+1. Open the dataset in Excel
+2. Add a helper column using TRIM()
+3. Compare trimmed vs original values
+
+Actual Result
+Some department values contain extra spaces.
+
+Expected Result
+Department names should be clean and consistently formatted without extra spaces.
+
+Impact
+Formatting inconsistencies can lead to incorrect grouping and reporting.
+
+Evidence
+Helper column comparison highlighted rows with extra spaces.
+
+
+
+
